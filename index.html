@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="font-awesome.min.css" />
+    <script src="scripts.js" defer></script>
+    <title>MinesWeeperJS</title>
+  </head>
+
+  <body>
+    <div class="loading">
+      <img src="logo.png" alt="" class="img" />
+      <progress max="100" value="0"></progress>
+    </div>
+    <div class="hideSideBar" id="sideBar">
+      <div class="title">MinesWeeperJS</div>
+      <div class="items">
+        <div><i class="fa fa-gamepad" aria-hidden="true"></i>How to play</div>
+        <div><i class="fa fa-star" aria-hidden="true"></i>Best scores</div>
+      </div>
+      <div class="dev">
+        <i class="fa fa-code" aria-hidden="true"></i> by
+        <a href="https://www.instagram.com/moumni.taha/">Taha</a> with
+        <i class="fa fa-heart" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="main">
+      <div class="blur"></div>
+      <div class="top">
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <span class="bombsleft"></span>
+        <div>
+          <datalist id="level">
+            <option value="0">Easy</option>
+            <option value="50">Medium</option>
+            <option value="100">Hard</option>
+          </datalist>
+          <input type="range" class="range" value="0" step="50" list="level" />
+        </div>
+        <div class="flgch">
+          <span class="flg">🏴</span>
+          <input type="checkbox" class="checkbox" />
+        </div>
+        <div class="tc">
+          <div class="timer">00:00</div>
+          <div class="switcher">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="board"></div>
+    </div>
+  </body>
+</html>
